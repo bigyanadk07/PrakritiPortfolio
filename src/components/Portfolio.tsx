@@ -20,8 +20,7 @@ const Portfolio: React.FC = () => {
       client: 'Astrosage',
       tools: ['Adobe Photoshop'],
       fullDescription: 'A comprehensive brand identity for Astrosage, featuring a celestial-themed visual system that captures the essence of cosmic exploration and mystique.',
-      year: 2024,
-      awards: ['Creative Design Award']
+      year: 2024
     },
     {
       image: Design2,
@@ -30,8 +29,7 @@ const Portfolio: React.FC = () => {
       client: 'Earpuffs',
       tools: ['Adobe Photoshop'],
       fullDescription: 'Innovative branding and packaging design for Earpuffs, creating a vibrant and memorable visual identity for their unique audio accessories.',
-      year: 2024,
-      awards: ['Product Design Innovation']
+      year: 2024
     },
     {
       image: Design3,
@@ -40,8 +38,7 @@ const Portfolio: React.FC = () => {
       client: 'Holocaust Stridex',
       tools: ['Adobe Photoshop'],
       fullDescription: 'A powerful visual communication design that aims to raise awareness and create impactful messaging for the Holocaust Stridex campaign.',
-      year: 2024,
-      awards: ['Social Impact Design']
+      year: 2024
     },
     {
       image: Design4,
@@ -50,8 +47,7 @@ const Portfolio: React.FC = () => {
       client: 'Meducare',
       tools: ['Adobe Photoshop'],
       fullDescription: 'Comprehensive branding solution for Meducare, developing a professional and compassionate visual identity for healthcare services.',
-      year: 2024,
-      awards: ['Healthcare Design Excellence']
+      year: 2024
     },
     {
       image: Design5,
@@ -60,8 +56,7 @@ const Portfolio: React.FC = () => {
       client: 'Velora',
       tools: ['Adobe Photoshop'],
       fullDescription: 'Cutting-edge brand design for Velora Smart Watch, combining sleek aesthetics with technological innovation in the wearable tech space.',
-      year: 2024,
-      awards: ['Tech Design Innovation']
+      year: 2024
     },
     {
       image: Design6,
@@ -70,8 +65,7 @@ const Portfolio: React.FC = () => {
       client: 'Personal Project',
       tools: ['Adobe Photoshop'],
       fullDescription: 'Creative exploration of Airpods branding, reimagining the visual language and marketing approach for wireless audio devices.',
-      year: 2024,
-      awards: ['Creative Concept Design']
+      year: 2024
     },
     {
       image: Design7,
@@ -80,8 +74,7 @@ const Portfolio: React.FC = () => {
       client: 'Suncare Cosmetics',
       tools: ['Adobe Photoshop'],
       fullDescription: 'Innovative packaging and branding design for a sun cream product, focusing on clean, appealing, and modern visual communication.',
-      year: 2024,
-      awards: ['Packaging Design Award']
+      year: 2024
     }
   ];
 
