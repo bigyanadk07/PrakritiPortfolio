@@ -20,8 +20,8 @@ const Hero = forwardRef<HTMLDivElement, { sectionRefs: SectionRefs }>((props, re
       className="relative py-20 md:py-36 overflow-hidden bg-gradient-to-br from-pink-50 via-white to-purple-50 w-full"
     >
       {/* Floating decorative shapes */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-30 -z-10 animate-float" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30 -z-10 animate-float-reverse" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-30 -z-10 animate-bounce" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30 -z-10 animate-bounce" />
       
       {/* Geometric overlay */}
       <div className="absolute inset-0 pointer-events-none">
@@ -91,34 +91,6 @@ const Hero = forwardRef<HTMLDivElement, { sectionRefs: SectionRefs }>((props, re
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.6s ease-out forwards;
-          opacity: 0;
-        }
-
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
-        }
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
-        }
-        .animate-float-reverse {
-          animation: float 6s ease-in-out infinite reverse;
-        }
-      `}</style>
     </section>
   );
 });

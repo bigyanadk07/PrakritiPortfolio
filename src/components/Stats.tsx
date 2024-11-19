@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Users, Briefcase, PenTool } from 'lucide-react';
 
-const Stats = () => {
+// Define prop types for CountUpNumber
+interface CountUpNumberProps {
+  start: number;
+  end: number;
+  duration: number;
+}
+
+const Stats: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const stats = [
@@ -105,14 +112,14 @@ const Stats = () => {
 };
 
 // Counter component for smooth number animation
-const CountUpNumber = ({ start, end, duration }) => {
+const CountUpNumber: React.FC<CountUpNumberProps> = ({ start, end, duration }) => {
   const [count, setCount] = useState(start);
   
   useEffect(() => {
-    let startTime;
-    let animationFrame;
+    let startTime: number | null = null;
+    let animationFrame: number | null = null;
     
-    const updateCount = (timestamp) => {
+    const updateCount = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = timestamp - startTime;
       
@@ -136,7 +143,7 @@ const CountUpNumber = ({ start, end, duration }) => {
     };
   }, [start, end, duration]);
   
-  return count;
+  return <>{count}</>;
 };
 
 export default Stats;
